@@ -44,3 +44,5 @@ FROM (SELECT PlayerRegions2.PLAYER_NAME,
                    MaxFGPct.PLAYER_NAME = PlayerRegions2.PLAYER_NAME AND MaxFGPct.MAX_FG_PCT = PlayerRegions2.FG_PCT) AS PlayerFGPct ON
      PlayerAttempts.PLAYER_NAME = PlayerFGPct.PLAYER_NAME
 order by PlayerAttempts.PLAYER_NAME
+
+--Runtime: 00:01:25.345
